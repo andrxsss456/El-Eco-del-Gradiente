@@ -1,0 +1,14 @@
+MSS / ARCHIVO EXPERIMENTAL Ω∞ — EL HIPER-ECO DEL GRADIENTE
+
+ARCHIVOS
+- index.html: página completa. El tratado ya está integrado dentro del HTML.
+- style.css: diseño editorial adaptable, fórmulas, índice y controles.
+- script.js: búsqueda, navegación, partículas, progreso y simulación E-λ reversible.
+- contenido.md: fuente Markdown del tratado para futuras ediciones.
+
+USO
+1. Mantén los cuatro archivos en la misma carpeta.
+2. Abre index.html en un navegador moderno.
+3. MathJax se carga desde CDN para representar fórmulas; sin conexión, el contenido permanece visible, aunque algunas expresiones pueden mostrarse en notación LaTeX.
+
+La simulación de entropía solo altera la presentación visual. No borra, reemplaza ni modifica el texto.
