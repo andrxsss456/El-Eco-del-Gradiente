@@ -1,0 +1,69 @@
+/* style.css - Refinado */
+:root {
+  --bg: #0d0d0d;
+  --gemini-msg: rgba(45, 27, 2, 0.4);
+  --user-msg: rgba(255, 255, 255, 0.05);
+  --accent: #ff8c00;
+  --text: #d1d1d1;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header { text-align: center; margin-bottom: 40px; }
+h1 { color: var(--accent); letter-spacing: 2px; margin-bottom: 5px; }
+.subtitle { opacity: 0.6; font-size: 0.9rem; }
+
+#chat-container {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.msg { display: flex; gap: 15px; align-items: flex-start; }
+.msg.usuario { flex-direction: row-reverse; }
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: var(--accent);
+  color: black;
+  flex-shrink: 0;
+}
+
+.usuario .avatar { background: #555; color: white; }
+
+.cuerpo {
+  padding: 15px 20px;
+  border-radius: 15px;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.gemini .cuerpo { background: var(--gemini-msg); border: 1px solid rgba(255, 140, 0, 0.2); }
+.usuario .cuerpo { background: var(--user-msg); border: 1px solid rgba(255, 255, 255, 0.1); }
+
+.formula {
+  display: block;
+  margin: 10px 0;
+  color: var(--accent);
+  font-family: monospace;
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  text-align: center;
+}
